@@ -21,7 +21,7 @@ img {
 }
 
 summary {
-  display: block
+  display: block;
 }
 
 .center {
@@ -157,7 +157,16 @@ summary {
     letter-spacing: 0.025em;
     color: $colorText
   }
+  &__dropdown-item {
+    font-family: Lato-Regular, sans-serif;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #4f4f4f;
+  }
 }
+
 .header__add:hover svg path {
   fill: $colorTextAccent;
 }
