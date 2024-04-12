@@ -133,7 +133,6 @@
     </div>
   </header>
   <section class="brand center">
-<!--    <img class="brand__img img" src="./images/man-bg.png" alt="man">-->
     <div class="brand__heading">
       <h1 class="heading_h1">THE BRAND</h1>
       <h2 class="heading_h2">OF LUXERIOUS <span class="color_pink">FASHION</span></h2>
@@ -158,7 +157,6 @@
 
     </div>
     <div class="category__column">
-
       <div class="category__card card__small">
         <img class="category__card-img" src="./images/women.png" alt="women">
         <div class="category__content">
@@ -347,31 +345,39 @@
       </div>
     </div>
   </section>
+
   <section class="subscription center">
     <div class="subscription__left">
-      <img src="./images/face.png" alt="women_face">
-      <p class="subscription__text">“Vestibulum quis porttitor dui!
-        Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
-      <p class="subscription__author"><span class="color__text">Bin Burhan</span>
-        Dhaka, Bd</p>
-      <div class="slider-carusel-container">
-        <span class="carusel-item ">
+      <img src="./images/face.png" alt="women_face" class="review__img">
+      <div class="review__content">
+        <p class="review__text">“Vestibulum quis porttitor dui!
+          Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed
+          pretium“</p>
+        <p class="review__name">Bin Burhan</p>
+        <p class="review__city">Dhaka, Bd</p>
+        <div class="slider-carusel-container">
+          <span class="carusel-item ">
           <div class="carusel-item-progress carusel-active"></div></span>
-        <span class="carusel-item ">
+          <span class="carusel-item__active">
+          <div class="carusel-item-progress carusel-active "></div></span>
+          <span class="carusel-item ">
           <div class="carusel-item-progress carusel-active"></div></span>
-        <span class="carusel-item ">
-          <div class="carusel-item-progress carusel-active"></div></span>
+        </div>
       </div>
+
     </div>
     <div class="subscription__right">
       <h2 class="subscription__title1">SUBSCRIBE</h2>
       <h3 class="subscription__title2">FOR OUR NEWLETTER AND PROMOTION</h3>
-      <form class="subscription__email">
-        <input class="email" type="email" placeholder="Enter Your Email" name="email" id="">
-        <button class="email__button" type="submit">Subscribe</button>
+      <form class="subscription__form" action="#" method="post">
+        <label for="email">
+          <input class="subscription__field" type="email" name="email" id="email" placeholder="Enter Your Email"/>
+        </label>
+        <button class="subscription__button" type="submit">Subscribe</button>
       </form>
     </div>
   </section>
+
   <footer class="footer center">
     <div class="footer__top">
       <div class="footer-top__left">
