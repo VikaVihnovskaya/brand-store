@@ -38,7 +38,6 @@ summary {
     min-height: 100px;
     background-color: $colorMain;
     border-bottom: 1px solid #ececec;
-    ////box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -72,22 +71,27 @@ summary {
     color: $colorText;
   }
   &__bottom {
-    min-height: 51px;
+    height: 51px;
     background-color: $colorMain;
     display: flex;
-    flex-direction: row;
     justify-content: center;
   }
+
   &__nav-list {
     list-style-type: none;
     display: flex;
-    width: 680px;
+    width: 710px;
     justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
+    z-index: 2;
+    //position: absolute;
   }
   &__item {
-    padding-top: 19px;
-    padding-bottom: 22px;
+    position: relative;
+    &:hover .mega-box {
+      display: flex;
+    }
   }
   &__link-text {
     font-family: Lato-Bold, sans-serif;
@@ -95,6 +99,14 @@ summary {
     line-height: 26px;
     text-transform: uppercase;
     color: $colorText;
+    padding: 19px 15px 15px;
+    display: block;
+    transition: transform 0.6s;
+
+    &:hover {
+      color: $colorTextAccent;
+      transform: scale(1.2);
+    }
   }
 }
 
@@ -105,8 +117,7 @@ summary {
 }
 .search-field {
   display: flex;
-  //height: 38px;
-
+  position: relative;
   &__button {
     border: 1px solid #e6e6e6;
     border-radius: 3px 0px 0px 3px;
@@ -141,21 +152,43 @@ summary {
     background-color: inherit;
   }
 }
+.header-top__browse summary {
+  list-style-type: none;
+}
+
+.header-top__browse-title {
+  text-align: left;
+  font-family: Lato-Regular, sans-serif;
+  font-size: 14px;
+  line-height: 32px;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #232323;
+  border-bottom: 1px solid #e8e8e8;
+
+  &__browse-title:first-of-type {
+    margin-bottom: 50px;
+    border-bottom: none;
+  }
+}
+.browse-summary {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
 .browse {
+  &__details {
+    background-color: $colorMain;
+    margin-top: 26px;
+    position: absolute;
+    z-index: 1;
+    padding: 0 59px 26px 20px;
+    border-radius: 5px;
+  }
   &__dropdown-list {
     list-style-type: none;
     text-align: left;
-  }
-  &__details {
-    padding: 19px 0 22px 15px;
-  }
-  &__browse-title {
-    font-family: Lato-Regular, sans-serif;
-    font-size: 14px;
-    line-height: 32px;
-    text-transform: uppercase;
-    letter-spacing: 0.025em;
-    color: $colorText
   }
   &__dropdown-item {
     font-family: Lato-Regular, sans-serif;
@@ -165,6 +198,12 @@ summary {
     letter-spacing: 0.025em;
     color: #4f4f4f;
   }
+}
+.browse__dropdown-item:hover {
+  color: $colorTextAccent;
+}
+.fa-play {
+  padding-left: 4px;
 }
 
 .header__add:hover svg path {
@@ -199,6 +238,74 @@ summary {
 .account__text:hover {
   color: $colorTextAccent;
 }
+
+.mega-box {
+  background-color: $colorMain;
+  border-radius: 5px;
+  border: 1px solid $colorBorder;
+  padding: 20px;
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  &::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-top: 1px solid $colorBorder;
+    border-left: 1px solid $colorBorder;
+    position: absolute;
+    top: -9px;
+    transform: rotate(45deg);
+    left: 30px;
+    background-color: $colorMain;
+  }
+}
+.mega-item {
+  margin-right: 46px;
+}
+
+.mega-item:last-of-type {
+  margin-right: 0;
+}
+
+.mega-title {
+  font-family: Lato-Regular, sans-serif;
+  border-bottom: 1px solid $colorBorder;
+  font-size: 14px;
+  line-height: 32px;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #232323;
+  margin-bottom: 16px;
+  width: 235px;
+}
+
+.mega-link {
+  font-family: Lato-Regular, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.025em;
+  color: #646464;
+  display: block;
+}
+.mega-link:hover {
+  color: $colorTextAccent;
+}
+
+.last:hover .mega-box {
+  right: 0;
+  left: auto;
+  &::before {
+    top: -8px;
+    right: 10px;
+    left: auto;
+  }
+}
+
+
 
 .brand {
   //padding-left: calc(50% - 800px);
