@@ -35,7 +35,6 @@
 }
 .slider {
   height: 777px;
-  position: relative;
   background: #F7F7F7;
   display: flex;
   justify-content: center;
@@ -49,7 +48,6 @@
     width: 47px;
     height: 47px;
     position: absolute;
-    top: 365px;
     &_left {
       left: 0;
     }
