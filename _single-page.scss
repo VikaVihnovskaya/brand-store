@@ -39,7 +39,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #eaeaea;
+  border: 1px solid $colorBorderSingle;
   &__arrow {
     background: rgba(42, 42, 42, 0.15);
     display: flex;
@@ -59,3 +59,95 @@
     }
   }
 }
+.content {
+  max-width: 1141px;
+  height: 730px;
+  padding-top: 75px;
+  background-color: $colorMain;
+  border: 1px solid $colorBorderSingle;
+  position: relative;
+  margin: -85px auto 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__subtitle {
+    font-family: Lato-Bold, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: $colorTextAccent;
+    padding-bottom: 10px;
+  }
+
+  &__line {
+    width: 147px;
+    height: 1px;
+    //background-color: $colorTextAccent;
+    border: 1px solid $colorBorderSingle;
+  }
+
+  &__heading {
+    font-family: Lato-Black, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #4d4d4d;
+    padding-top: 10px;
+
+  }
+
+  &__text {
+    font-family: Lato-Light, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #5e5e5e;
+    text-align: center;
+    max-width: 620px;
+    padding-top: 60px;
+    margin-bottom: 28px;
+  }
+
+  &__add-info {
+    display: flex;
+    gap: 44px;
+    justify-content: center;
+    margin-bottom: 37px;
+  }
+  &__price {
+    font-family: Lato-Bold, sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ef5b70;
+    text-align: center;
+    width: 642px;
+    margin: 0 auto 63px;
+    border-bottom: 1px solid $colorBorderSingle;
+    padding-bottom: 43px;
+
+  }
+
+}
+.add-info {
+  &__text {
+    font-family: Lato-Bold, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #b9b9b9;
+  }
+  &__text-bold {
+      color: #2f2f2f;
+  }
+}
+
+
+//.intro {
+//  width: 63px;
+//  height: 3px;
+//  background-color: #ef5b70;
+//}
