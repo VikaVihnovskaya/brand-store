@@ -1,0 +1,63 @@
+.arrivals {
+  background-color: $colorBackgroundSingle;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  border-bottom: 1px solid #eaeaea;
+  &__heading{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title {
+    font-family: Lato-Black, sans-serif;
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $colorTextAccent;
+  }
+}
+.bradcrumps__link {
+  font-family: Lato-Light, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #636363;
+  &:hover {
+    color: $colorTextAccent;
+  }
+}
+.color-link {
+  font-weight: 700;
+  color: $colorTextAccent;
+}
+.slider {
+  height: 777px;
+  position: relative;
+  background: #F7F7F7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #eaeaea;
+  &__arrow {
+    background: rgba(42, 42, 42, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 47px;
+    height: 47px;
+    position: absolute;
+    top: 365px;
+    &_left {
+      left: 0;
+    }
+    &_right {
+      right: 0;
+    }
+    &:hover path{
+      fill: $colorTextAccent;
+    }
+  }
+}
