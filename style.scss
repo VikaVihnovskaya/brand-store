@@ -280,6 +280,7 @@ summary {
   letter-spacing: 0.025em;
   color: #232323;
   margin-bottom: 16px;
+  width: 200px;
 }
 
 .mega-link {
@@ -483,6 +484,9 @@ summary {
 
 .product__card:hover .product__add {
   display: flex;
+}
+.product__add:hover {
+  color: $colorTextAccent;
 }
 .product__add:hover svg path {
   fill: $colorTextAccent;
