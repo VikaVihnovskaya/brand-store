@@ -306,8 +306,6 @@ summary {
   }
 }
 
-
-
 .brand {
   min-height: 665px;
   background: rgba(244, 244, 244, 0.70);
@@ -834,10 +832,10 @@ summary {
   }
   &__icons {
     display: flex;
-
     gap:8px;
   }
 }
+
 .media__link {
   width: 32px;
   height: 32px;
@@ -851,7 +849,7 @@ summary {
 }
 .media__img{
   text-align: center;
-  //margin: auto;
+
   display: flex;
 
 }
