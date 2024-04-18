@@ -19,21 +19,42 @@
     color: $colorTextAccent;
   }
 }
-.bradcrumps__link {
-  font-family: Lato-Light, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 300;
-  text-transform: uppercase;
-  color: #636363;
-  &:hover {
+.breadcrumbs {
+  &__ul {
+    list-style-type: none;
+    display: flex;
+  }
+
+  &__li:not(:last-child):after {
+    content: '/';
+    padding-right: 4px;
+    font-style: normal;
+    font-family: Lato-Light, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #636363;
+  }
+
+  &__link {
+    font-style: normal;
+    font-family: Lato-Light, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #636363;
+  }
+
+  &__li:last-child .breadcrumbs__link {
+    font-family: Lato-Bold, sans-serif;
+    font-weight: 700;
     color: $colorTextAccent;
+
   }
 }
-.color-link {
-  font-weight: 700;
-  color: $colorTextAccent;
-}
+
 .slider {
   height: 777px;
   background: #F7F7F7;
@@ -41,6 +62,7 @@
   justify-content: center;
   align-items: center;
   border: 1px solid $colorBorderSingle;
+
   &__arrow {
     background: rgba(42, 42, 42, 0.15);
     display: flex;
@@ -49,17 +71,21 @@
     width: 47px;
     height: 47px;
     position: absolute;
+
     &_left {
       left: 0;
     }
+
     &_right {
       right: 0;
     }
-    &:hover path{
+
+    &:hover path {
       fill: $colorTextAccent;
     }
   }
 }
+
 .content {
   max-width: 1141px;
   height: 730px;
@@ -125,6 +151,7 @@
     justify-content: center;
     margin-bottom: 37px;
   }
+
   &__price {
     font-family: Lato-Bold, sans-serif;
     font-size: 24px;
@@ -140,6 +167,7 @@
   }
 
 }
+
 .add-info {
   &__text {
     font-family: Lato-Bold, sans-serif;
@@ -148,10 +176,12 @@
     font-weight: 700;
     color: #b9b9b9;
   }
+
   &__text-bold {
-      color: #2f2f2f;
+    color: #2f2f2f;
   }
 }
+
 .choose {
   display: flex;
   justify-content: center;
@@ -193,6 +223,7 @@
     color: #bcbcbc;
   }
 }
+
 .choose__down {
   color: #bcbcbc;
   margin-left: 51%;
@@ -202,6 +233,7 @@
   color: #bcbcbc;
   margin-left: 67%;
 }
+
 .choose__button {
   height: 55px;
   background-color: $colorMain;
@@ -212,12 +244,14 @@
   display: flex;
   gap: 15px;
   border: 1px solid $colorTextAccent;
+
   &:hover {
     background-color: $colorTextAccent;
     border: 1px solid $colorMain;
     transition: transform 0.5s ease;
   }
 }
+
 .choose__link {
   color: $colorTextAccent;
   font-family: Lato-Bold, sans-serif;
@@ -230,17 +264,21 @@
     fill: $colorTextAccent;
 
   }
+
   &:hover {
     color: $colorMain;
   }
 }
+
 .choose__link:hover svg path {
   fill: $colorMain;
 }
+
 .suggestion {
   background-color: $colorMain;
   margin-top: 120px;
   margin-bottom: 73px;
+
   &__title {
     font-family: Lato-Black, sans-serif;
     font-size: 24px;
@@ -287,6 +325,8 @@
     color: $colorTextAccent;
   }
 }
+
 .suggestion__card:hover {
   box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
 }
+
