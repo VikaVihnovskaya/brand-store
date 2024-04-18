@@ -14,8 +14,6 @@
   }
 
   &__summary {
-    //padding-top: 10px;
-    //padding-bottom: 10px;
     font-family: Lato-Bold, sans-serif;
     font-size: 16px;
     line-height: 72px;
@@ -23,5 +21,92 @@
     text-transform: uppercase;
     color: $colorText;
 
+  }
+
+  &__box {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 80px;
+  }
+  &__box-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 614px;
+    padding-left: 30px;
+  }
+
+  &__text-h1 {
+    font-family: Lato-Bold, sans-serif, sans-serif;
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $colorText;
+    margin-bottom: 15px;
+  }
+
+  &__text-h2 {
+    font-family: Lato-Regular, sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #b3b2b2;
+  }
+
+  &__text-h3 {
+    font-family: Lato-Bold, sans-serif, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $colorText;
+  }
+  &__add {
+    margin-top: 33px;
+    margin-bottom: 33px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    &__link {
+      display: block;
+
+    }
+  }
+
+  &__button {
+    border: 1px solid $colorBorderSingle;
+    background-color: $colorMain;
+    display: flex;
+    width: 180px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      border: 1px solid $colorTextAccent;
+      transition: transform 0.5s ease;
+    }
+  }
+
+  &__button-link {
+    font-family: Lato-Bold, sans-serif, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #4a4a4a;
+    &:hover {
+      color: $colorTextAccent;
+    }
+  }
+}
+
+.radio-box {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  & label {
+    margin-left: 14px;
   }
 }
