@@ -4,10 +4,19 @@
   padding-top: 65px;
   padding-bottom: 65px;
   border-bottom: 1px solid #eaeaea;
-  &__heading{
+  &__heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: space-between;
   }
   &__title {
@@ -22,6 +31,8 @@
 .breadcrumbs {
   &__ul {
     list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
@@ -58,15 +69,27 @@
 .slider {
   height: 777px;
   background: #F7F7F7;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   border: 1px solid $colorBorderSingle;
 
   &__arrow {
     background: rgba(42, 42, 42, 0.15);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 47px;
     height: 47px;
@@ -95,8 +118,15 @@
   position: relative;
   margin: -80px auto 0;
   z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
   &__subtitle {
@@ -112,7 +142,11 @@
     width: 147px;
     height: 1px;
     border: 1px solid $colorBorderSingle;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 
@@ -146,8 +180,12 @@
   }
 
   &__add-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 44px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 37px;
   }
@@ -183,7 +221,11 @@
 }
 
 .choose {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   gap: 53px;
 
@@ -192,7 +234,11 @@
     height: 35px;
     background-color: $colorMain;
     border: 1px solid $colorBorderSingle;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding-left: 15px;
     margin-top: 16px;
@@ -203,7 +249,6 @@
     width: 12px;
     height: 12px;
     background-color: #ef5b70;
-    // margin-left: 14px;
     margin-right: 11px;
   }
 
@@ -237,10 +282,16 @@
 .choose__button {
   height: 55px;
   background-color: $colorMain;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin: 0 auto;
   padding: 0 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 15px;
   border: 1px solid $colorTextAccent;
@@ -248,6 +299,7 @@
   &:hover {
     background-color: $colorTextAccent;
     border: 1px solid $colorMain;
+    -webkit-transition: transform 0.5s ease;
     transition: transform 0.5s ease;
   }
 }
@@ -258,6 +310,8 @@
   font-size: 16px;
   line-height: 1.2;
   font-weight: 700;
+  -webkit-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
   //transition: 0.3s;
 
   & svg path {
@@ -290,15 +344,21 @@
   }
 
   &__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 32px;
   }
 
   &__img-wrapper {
     background-color: #e9e9e9;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 280px;
     width: 261px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 
@@ -327,6 +387,7 @@
 }
 
 .suggestion__card:hover {
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
 }
 

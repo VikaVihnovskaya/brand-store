@@ -24,13 +24,22 @@
   }
 
   &__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-top: 10px;
     padding-bottom: 80px;
   }
   &__box-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: 614px;
     padding-left: 30px;
@@ -63,7 +72,12 @@
   &__add {
     margin-top: 33px;
     margin-bottom: 33px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 12px;
 
@@ -76,19 +90,26 @@
   &__button {
     border: 1px solid $colorBorderSingle;
     background-color: $colorMain;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 180px;
     height: 50px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     &:hover {
       border: 1px solid $colorTextAccent;
+      -webkit-transition: transform 0.5s ease;
       transition: transform 0.5s ease;
     }
   }
 
   &__button-link {
-    font-family: Lato-Bold, sans-serif, sans-serif;
+    font-family: Lato-Bold, sans-serif;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.2;
@@ -99,9 +120,13 @@
     }
   }
   &__box-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
-    //justify-content: center;
     width: 614px;
   }
 }
@@ -109,7 +134,12 @@
 .radio-box {
   margin-top: 30px;
   margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   gap: 16px;
   & label {
@@ -146,7 +176,12 @@
   margin-bottom: 26px;
 }
 .forgot {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   gap: 30px;
 
