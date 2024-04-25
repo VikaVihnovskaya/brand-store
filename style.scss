@@ -45,7 +45,7 @@ summary {
     background-color: $colorMain;
     border-bottom: 1px solid #ececec;
     display: flex;
-    display: -webkit-box;
+    //display: -webkit-box;
     display: -ms-flexbox;
     flex-direction: row;
     -webkit-box-orient: horizontal;
@@ -76,6 +76,13 @@ summary {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center
+  }
+  &__right-details {
+    position: relative;
+  }
+
+  &__right-details summary {
+    list-style-type: none;
   }
 
   &__logo {
@@ -245,13 +252,172 @@ summary {
 .browse__dropdown-item:hover {
   color: $colorTextAccent;
 }
-.fa-play {
+.fa-caret-down {
   padding-left: 4px;
+  color: #838383;
 }
 
-.header__add:hover svg path {
-  fill: $colorTextAccent;
+.basket__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+
+  &:hover img {
+    fill: $colorTextAccent;
+  }
 }
+
+.basketBox {
+  //display: none;
+  width: 262px;
+  height: 440px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+  position: absolute;
+  top: 52px;
+  z-index: 2;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-top: 1px solid #e8e8e8;
+    border-left: 1px solid #e8e8e8;
+    position: absolute;
+    top: -9px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    left: 8px;
+  }
+  &__mega-item{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding-left: 15px;
+  }
+
+  &__add:hover {
+    width: 100%;
+    background-color: #e8e8e8;
+  }
+  &__purchase {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 15px;
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 15px;
+    margin-top: 16px;
+  }
+  &__totalSumFlex {
+    margin-top: 19px;
+    margin-bottom: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 120px;
+  }
+  &__totalSum {
+    font-family: Lato-Bold, sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+  }
+  &__buttonsFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 18px;
+    gap: 11px;
+  }
+  &__button {
+    font-family: Lato-Bold, sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #4a4a4a;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    width: 225px;
+    height: 50px;
+    &:hover {
+      color: $colorTextAccent;
+      border: 1px solid $colorTextAccent;
+    }
+  }
+}
+
+.purchase {
+  &__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 12px;
+  }
+  &__name {
+    font-family: Lato-Bold, sans-serif;
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+  }
+  &__itemPrice {
+    font-family: Lato-Regular, sans-serif;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #f16d7f;
+
+    &-x {
+      font-size: 10px;
+    }
+  }
+  &__cancel {
+    height: 15px;
+    width: 15px;
+    margin-left: 40px;
+  }
+}
+
 .button__account {
   width: 130px;
   height: 38px;
