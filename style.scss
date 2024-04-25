@@ -210,7 +210,7 @@ summary {
   text-transform: uppercase;
   letter-spacing: 0.025em;
   color: #232323;
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid $colorBorder;
 
   &__browse-title:first-of-type {
     margin-bottom: 50px;
@@ -275,9 +275,9 @@ summary {
   //display: none;
   width: 262px;
   height: 440px;
-  background-color: #ffffff;
+  background-color: $colorMain;
   border-radius: 5px;
-  border: 1px solid #e8e8e8;
+  border: 1px solid $colorBorder;
   position: absolute;
   top: 52px;
   z-index: 2;
@@ -288,8 +288,8 @@ summary {
     width: 16px;
     height: 16px;
     background-color: white;
-    border-top: 1px solid #e8e8e8;
-    border-left: 1px solid #e8e8e8;
+    border-top: 1px solid $colorBorder;
+    border-left: 1px solid $colorBorder;
     position: absolute;
     top: -9px;
     -webkit-transform: rotate(45deg);
@@ -316,7 +316,7 @@ summary {
 
   &__add:hover {
     width: 100%;
-    background-color: #e8e8e8;
+    background-color: $colorBorder;
   }
   &__purchase {
     display: -webkit-box;
@@ -327,7 +327,7 @@ summary {
     -ms-flex-direction: row;
     flex-direction: row;
     gap: 15px;
-    border-bottom: 1px solid #e8e8e8;
+    border-bottom: 1px solid $colorBorder;
     padding-bottom: 15px;
     margin-top: 16px;
   }
@@ -349,7 +349,7 @@ summary {
     line-height: 1.2;
     font-weight: 700;
     text-transform: uppercase;
-    color: #222222;
+    color: $colorMain;
   }
   &__buttonsFlex {
     display: -webkit-box;
@@ -369,8 +369,8 @@ summary {
     font-weight: 700;
     text-transform: uppercase;
     color: #4a4a4a;
-    background-color: #ffffff;
-    border: 1px solid #eaeaea;
+    background-color: $colorMain ;
+    border: 1px solid $colorBorderSingle;
     width: 225px;
     height: 50px;
     &:hover {
@@ -397,7 +397,7 @@ summary {
     line-height: 1.2;
     font-weight: 700;
     text-transform: uppercase;
-    color: #222222;
+    color: $colorText;
   }
   &__itemPrice {
     font-family: Lato-Regular, sans-serif;
@@ -405,7 +405,7 @@ summary {
     line-height: 1.2;
     font-weight: 400;
     text-transform: uppercase;
-    color: #f16d7f;
+    color: $colorTextAccent;
 
     &-x {
       font-size: 10px;
