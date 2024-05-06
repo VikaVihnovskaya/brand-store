@@ -227,4 +227,23 @@ summary::-webkit-details-marker {
   }
 }
 
+.feature__right.flex-row {
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 89px;
+  padding-bottom: 114px;
+}
 
+.feature__info.flex-column {
+  flex-direction: column;
+
+}
+.feature-info__img.align-self {
+  align-self: center;
+}
+.feature__content.middle-text {
+  text-align: center;
+}
+.feature__text.width {
+  max-width: 310px;
+}
