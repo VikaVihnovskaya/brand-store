@@ -1,0 +1,150 @@
+@import "vars";
+.shoppList {
+  padding-top: 90px;
+  padding-bottom: 79px;
+}
+.shopping__box {
+  width: 1140px;
+  margin-bottom: 44px;
+}
+.shopping__grid {
+  display: grid;
+  grid-template-columns: 45% 15% 12% 12% 11% 5%;
+  border-bottom: 1px solid $colorBorderSingle;
+
+  &--padding {
+    padding-bottom: 20px;
+  }
+}
+
+.shopping__title {
+  font-family: Lato-Bold, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.015em;
+  color: $colorText;
+}
+.shopping__item {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.shopping__info {
+  font-size: 13px;
+  line-height: 20px;
+  color: #656565;
+  align-self: center;
+  margin-left: 18px;
+}
+.grid__left {
+  display: flex;
+  gap: 21px;
+}
+
+.description {
+  &__name {
+    font-family: Lato-Bold, sans-serif;
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $colorText;
+    padding-top: 13px;
+    margin-bottom: 38px;
+  }
+  &__details {
+    font-family: Lato-Regular, sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #575757;
+
+    &--lighter {
+      font-family: Lato-Light, sans-serif;
+      font-size: 13px;
+      font-weight: 300;
+      color: #6f6e6e;
+    }
+  }
+}
+.shopping__input {
+  display: block;
+  align-self: center;
+  width: 54px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  text-align: center;
+}
+.shopping__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 63px;
+}
+
+.shopping__button {
+  font-family: Lato-Bold, sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4a4a4a;
+  width: 235px;
+  height: 50px;
+  border: 1px solid $colorBorderSingle;
+  background-color: $colorMain;
+}
+.shopping__information {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 35px;
+}
+.information {
+  &__title {
+    margin-bottom: 22px;
+  }
+  &__text {
+    font-family: Lato-Bold, sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: $colorText;
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+  &__field {
+    display: block;
+    width: 355px;
+    height: 45px;
+    border: 1px solid $colorBorderSingle;
+    box-sizing: border-box;
+    padding-left: 18px;
+    font-family: Lato-Light, sans-serif;
+    font-size: 13px;
+    line-height: 1.2;
+    color: #b1b1b1;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 35px;
+  }
+
+  &__input {
+    padding-right: 18px;
+
+    &::placeholder {
+      font-family: Lato-Light, sans-serif;
+      font-size: 13px;
+      line-height: 1.2;
+      color: #b1b1b1;
+    }
+  }
+
+}
+
+
