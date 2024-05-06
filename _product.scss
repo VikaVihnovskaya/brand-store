@@ -129,3 +129,102 @@ summary::-webkit-details-marker {
   font-weight: 400;
   color: $colorFilter;
 }
+.sort-by {
+  display: flex;
+  gap: 10px;
+  height: 30px;
+  margin-bottom: 48px;
+  background-color: #f3f3f3;
+  padding: 10px 100px 10px 10px;
+
+}
+.sort-by__item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ebebeb;
+
+}
+.sort-by__item-name {
+  padding: 0 8px 0 13px;
+  border: 1px solid #ebebeb;
+  background-color: $colorMain;
+  font-family: Lato-Regular, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: $colorFilter;
+
+}
+.sort-by__select {
+  padding: 4px 21px 3px 9px;
+  border: 1px solid #ebebeb;
+  background-color: $colorMain;
+  font-family: Lato-Regular, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: $colorFilter;
+}
+.product__heading-text {
+  font-family: Lato-Regular, sans-serif;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $colorFilter;
+}
+.pagination {
+  margin-top: 42px;
+  display: flex;
+  justify-content: space-between;
+}
+.pagination__list {
+  list-style-type: none;
+  background-color: $colorMain;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  padding: 5px;
+  display: flex;
+  gap: 15px;
+}
+.pagination__link {
+  font-family: Lato-Bold, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #c4c4c4;
+
+}
+.pagination__link:hover {
+  color: $colorTextAccent;
+}
+
+.pagination__button {
+  border: 1px solid $colorTextAccent;
+  background-color: $colorMain;
+  border-radius: 3px;
+  width: 150px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $colorMain;
+  transition: 0.3s;
+  &:hover {
+    background-color: $colorTextAccent;
+  }
+}
+
+.pagination__button-link {
+  font-family: Lato-Bold, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $colorTextAccent;
+  transition: 0.3s;
+  &:hover {
+    color: $colorMain;
+  }
+}
+
+
