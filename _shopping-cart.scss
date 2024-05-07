@@ -110,8 +110,26 @@
     line-height: 1.2;
     text-transform: uppercase;
     color: $colorText;
+    &--subtitle {
+      margin-bottom: 20px;
+      font-family: Lato-Light, sans-serif;
+      font-size: 14px;
+      line-height: 1.2;
+      font-weight: 300;
+      color: #000000;
+    }
   }
+  &__box.color {
+    width: 360px;
+    height: 214px;
+    background-color: #f5f3f3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 
+  }
   &__wrapper {
     position: relative;
   }
@@ -133,6 +151,18 @@
     gap: 20px;
     margin-bottom: 35px;
   }
+  &__submit {
+    width: 100px;
+    height: 35px;
+    background-color: $colorMain;
+    border: 1px solid $colorBorderSingle;
+    font-family: Lato-Bold, sans-serif;
+    font-size: 11px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #4a4a4a;
+  }
 
   &__input {
     padding-right: 18px;
@@ -145,6 +175,24 @@
     }
   }
 
+}
+.information-checkout__button {
+  width: 273px;
+  height: 50px;
+  background-color: $colorTextAccent;
+  color: $colorMain;
+  font-family: Lato-Bold, sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+}
+.price {
+  margin-left: 20px;
+}
+.color-pink {
+  color: $colorTextAccent;
 }
 
 
